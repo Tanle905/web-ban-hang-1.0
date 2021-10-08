@@ -1,0 +1,41 @@
+.bg-custom{
+    background-color: rgb(231, 231, 231);
+}
+
+#cart{
+    margin-right: 15px;
+}
+
+#search{
+    border-radius: 5px 50px 50px 5px;
+}
+
+.navbar-toggler{
+    margin-right: 0px;
+}
+
+.carousel img{
+    border-radius: 15px;
+}
+.img-content{
+    border-radius: 3px;
+    width: 320px;
+}
+
+.container-fluid{
+    padding-top: 5px;
+}
+
+.merchandise-grid{
+    padding: 15px;
+}
+
+.merchandise{
+    padding: 5px 15px ;
+}
+.row{
+    padding-left: 0px;
+}
+.address{
+    padding-top: 15px;
+}
