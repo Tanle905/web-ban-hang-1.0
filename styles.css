@@ -1,12 +1,16 @@
 .bg-custom{
-    background-color: rgb(231, 231, 231);
-}
-.nav-link:hover{
-    background-color: rgb(207, 207, 207);
+    background: linear-gradient(-45deg, #52ee93, #6f3ce7, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
 }
 .nav-link{
     margin-left: 15px;
     border-radius: 5px;
+    transition: 0.2s;
+}
+.nav-link:hover{
+    background-color: rgba(255, 82, 70, 0.795);
 }
 #cart{
     margin-right: 15px;
@@ -39,8 +43,28 @@
 .merchandise{
     padding: 5px 15px ;
 }
+.buy{
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(255,80,80);
+    background: linear-gradient(90deg, rgba(255,80,80,1) 45%, rgba(253,188,45,1) 100%);
+    transition: 0.3s;
+}
+.buy:hover{
+    background: linear-gradient(-45deg, rgba(255,80,80,1) 45%, rgba(253,188,45,1) 100%);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+.buy-link{
+    color: white;
+    text-decoration: none;
+}
+.buy-link:hover{
+    color: white;
+}
 .card{
-    transition: 0.1s;
+    transition: 0.3s;
 }
 .card:hover{
     
@@ -52,4 +76,16 @@
 }
 .address{
     padding-top: 15px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
