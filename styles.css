@@ -1,7 +1,13 @@
 .bg-custom{
     background-color: rgb(231, 231, 231);
 }
-
+.nav-link:hover{
+    background-color: rgb(207, 207, 207);
+}
+.nav-link{
+    margin-left: 15px;
+    border-radius: 5px;
+}
 #cart{
     margin-right: 15px;
 }
@@ -32,6 +38,14 @@
 
 .merchandise{
     padding: 5px 15px ;
+}
+.card{
+    transition: 0.1s;
+}
+.card:hover{
+    
+    border-width: 5px;
+    border-color: rgb(255, 17, 0);
 }
 .row{
     padding-left: 0px;
