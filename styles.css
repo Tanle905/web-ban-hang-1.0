@@ -1,3 +1,10 @@
+body{
+    background-color: #f0f0f0;
+    font-family: monospace;
+}
+.container-fluid{
+    position: relative;
+}
 .bg-custom{
     background: linear-gradient(-45deg, #52ee93, #6f3ce7, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
@@ -22,16 +29,14 @@
 .navbar-toggler{
     margin-right: 0px;
 }
-
 .carousel img{
     border-radius: 15px;
 }
 .img-content{
-    border-radius: 3px;
-    width: 320px;
+    border-radius: 3px; 
+    width: 330px;
 }
-
-.container-fluid{
+.container-carousel{
     padding-top: 5px;
 }
 
@@ -41,6 +46,12 @@
 
 .merchandise{
     padding: 5px 15px ;
+}
+.breadcrumb{
+    background-color: rgb(221, 221, 221);
+    padding: 10px;
+    margin: 10px ;
+    border-radius: 5px;
 }
 .buy{
     text-align: center;
@@ -93,8 +104,13 @@
 }
 @media (min-width: 540px) {
     .login{
-        position: relative;
-        right: -500px;
-        top: -10px;
+        position: absolute;
+        right: 15px;
+        top: -5px;
+    }
+    .sign-up{
+        position: absolute;
+        right: 120px;
+        top: -5px;
     }
 }
