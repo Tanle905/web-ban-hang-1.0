@@ -19,12 +19,6 @@
 #search{
     border-radius: 5px 50px 50px 5px;
 }
-.login{
-    position: relative;
-    right: -500px;
-    top: -10px;
-    max-width: 540px;
-}
 .navbar-toggler{
     margin-right: 0px;
 }
@@ -96,4 +90,11 @@
 	100% {
 		background-position: 0% 50%;
 	}
+}
+@media (min-width: 540px) {
+    .login{
+        position: relative;
+        right: -500px;
+        top: -10px;
+    }
 }
