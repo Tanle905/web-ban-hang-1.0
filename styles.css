@@ -1,6 +1,5 @@
 body{
     background-color: #f0f0f0;
-    font-family: monospace;
 }
 .container-fluid{
     position: relative;
@@ -41,19 +40,30 @@ body{
 }
 
 .merchandise-grid{
-    padding: 15px;
+    padding: 5px;
 }
-
+.merchandise-header{
+    background-color: rgb(221, 221, 221);
+    border-radius: 2px;
+    padding: 5px 0px;
+    margin: 0px 34px;
+}
 .merchandise{
     padding: 5px 15px ;
     margin-left: -10px;
     margin-right: -10px;
 }
 .breadcrumb{
-    background-color: rgb(221, 221, 221);
     padding: 10px;
     margin: 10px ;
     border-radius: 5px;
+}
+.sort-button{
+    padding: 5px 10px;
+    margin: 5px 5px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 2px;
+    border-width: 0px;
 }
 .buy{
     text-align: center;
