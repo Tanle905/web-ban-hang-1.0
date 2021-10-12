@@ -28,12 +28,11 @@ body{
 .navbar-toggler{
     margin-right: 0px;
 }
-.carousel img{
-    border-radius: 15px;
-}
+
 .img-content{
     border-radius: 3px; 
-    width: 330px;
+    width: 370px;
+    margin-left: -15px;
 }
 .container-carousel{
     padding-top: 5px;
