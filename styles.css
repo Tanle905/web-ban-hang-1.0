@@ -154,7 +154,7 @@ body{
         top: 5px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .modal-content{
         background: linear-gradient(-45deg, #d64545, #ec8c5f, #e7556e, #b763c2);
         background-size: 400% 400%;
