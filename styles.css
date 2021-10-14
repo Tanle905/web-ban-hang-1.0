@@ -5,7 +5,7 @@ body{
     position: relative;
 }
 .bg-custom{
-    background: linear-gradient(-45deg, #ff8c69, #db2d53, #ee6578, #d86042);
+    background: linear-gradient(-45deg, #d64545, #ec8c5f, #e7556e, #b763c2);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 
