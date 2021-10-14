@@ -1,8 +1,14 @@
 body{
     background-color: #f0f0f0;
 }
+.modal-content{
+    background-color: #f0f0f0;
+}
 .container-fluid{
     position: relative;
+}
+.modal .form-control{
+    margin-bottom: 20px;
 }
 .bg-custom{
     background: linear-gradient(-45deg, #d64545, #ec8c5f, #e7556e, #b763c2);
@@ -16,7 +22,14 @@ body{
     transition: 0.2s;
 }
 .nav-link:hover{
-    background-color: rgba(140, 172, 209, 0.582);
+    background-color: #1f2f417a;
+}
+.nav-item.dropdown .dropdown-menu{
+    margin-left: 15px;
+    transition: 0.2s;
+}
+.nav-item.dropdown .dropdown-menu .dropdown-item:hover{
+    background-color: #1f2f417a;
 }
 #cart{
     margin-right: 15px;
@@ -30,9 +43,13 @@ body{
 }
 
 .img-content{
+    position: relative;
     border-radius: 3px; 
     width: 370px;
     margin-left: -15px;
+    object-fit: scale-down;
+
+    
 }
 .container-carousel{
     padding-top: 5px;
@@ -114,26 +131,27 @@ body{
 	}
 }
 @media (min-width: 768px) {
-    .login{
+    #login{
         position: absolute;
         right: 15px;
         top: -5px;
     }
-    .sign-up{
+    #sign-up{
         position: absolute;
         right: 120px;
         top: -5px;
     }
 }
 @media (min-width: 768px) {
-    .login{
+    #login{
         position: absolute;
         right: 15px;
         top: 5px;
     }
-    .sign-up{
+    #sign-up{
         position: absolute;
         right: 120px;
         top: 5px;
     }
 }
+

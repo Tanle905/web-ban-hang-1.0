@@ -15,58 +15,131 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
+<section>
+  <div class="modal" id="sign-upFormToggle" aria-hidden="true" aria-labelledby="sign-upFormToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-md modal-fullscreen-sm-down">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="sign-upFormToggleLabel">Đăng ký</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="" class="justify-content-center">
+            <div class="">
+              <input type="text" class="form-control" placeholder="Nhập Email của bạn." id="signUpUserAccount">
+            </div>
+            <div class="">
+            <input type="password" class="form-control" placeholder="Nhập mật khẩu của bạn." id="signUpUserPassword">
+            </div>
+            <div class="">
+            <input type="password" class="form-control " placeholder="Vui lòng nhập lại mật khẩu." id="signUpUserPasswordConfirm">
+            </div>
+            <div class="row">
+            <button class="btn btn-primary col-3" type="submit" style="margin-left: 15px;">Đăng ký</button>
+            <div class="col-1 align-self-center">
+              <h6>Or</h6>
+            </div>
+            <button class="btn btn-primary col" type="submit" style="margin: 5px;background-color: rgb(221, 70, 70);border:0cm;"><i class="fab fa-google"></i> Google</button>
+            <button class="btn btn-primary col" type="submit" style="margin-right: 15px;"><i class="fab fa-facebook"></i> Facebook</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <a href="#loginFormToggle" class="text-dark" data-bs-toggle="modal">Đã có tài khoản ?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="loginFormToggle" aria-hidden="true" aria-labelledby="loginFormToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginFormToggleLabel">Đăng nhập</h5>
+          <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="">
+              <input type="text" class="form-control" placeholder="Nhập Email của bạn." id="loginUserAccount">
+            </div>
+            <div class="">
+            <input type="password" class="form-control" placeholder="Nhập mật khẩu của bạn." id="loginUserPassword">
+            </div>
+          <div class="row">
+          <button class="btn btn-primary col-3" type="submit" style="margin-left: 15px;">Đăng nhập</button>
+          <div class="col-1 align-self-center">
+            <h6>Or</h6>
+          </div>
+          <button class="btn btn-primary col" type="submit" style="margin: 5px;background-color: rgb(221, 70, 70);border:0cm;"><i class="fab fa-google"></i> Google</button>
+          <button class="btn btn-primary col" type="submit" style="margin-right: 15px;"><i class="fab fa-facebook"></i> Facebook</button>
+          </div>
+          </form>
+        </div>
+        <div class="modal-footer justify-content-around">
+          <a href="#sign-upFormToggle" class="text-dark" data-bs-toggle="modal">Chưa có tài khoản ? Đăng kí ngay!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <body>
   <header>
     <nav class="navbar navbar-dark navbar-expand-md bg-custom">
-      <div class="contaner-fluid container-lg justify-content-center">
+      <div class="container justify-content-center">
         <div class="row">
           <div class="col-sm-12 col-xxl-2" style="margin: 0px -15px -15px 0px;">
             <a class="navbar-brand d-none d-sm-flex d-xl-block justify-content-center" href="#"><img src="Images/7b9eb01979124d6da77cfcddd7e4dfda.png" alt=""></a>
           </div>
           <div class="col col-sm">
             <div class="row">
-              <div class="collapse navbar-collapse col-sm-12" id="navbarSupportedContent">
-                <ul class="navbar-nav col-12">
-                  <li class="nav-item">
-                    <a class="nav-link active fs-5" aria-current="page" href="#"><i class="fas fa-home d-md-none d-xl-inline"></i> Trang
-                      chủ</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link active dropdown-toggle fs-5" href="#" id="navbarDropdown" role="button"
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="fas fa-desktop d-md-none d-xl-inline"></i> Sản phẩm
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Laptop</a></li>
-                      <li><a class="dropdown-item" href="#">Máy tính để bàn</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link fs-5 active"><i class="fas fa-wrench d-md-none d-xl-inline"></i> Xây dựng cấu hình</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link fs-5 active"><i class="fas fa-heart d-md-none d-xl-inline"
-                        style="color: rgb(255, 58, 58);"></i> Sản phẩm yêu thích</a>
-                  </li>
-                  <li class="nav-item justify-content-end">
-                    <a class="nav-link fs-5 active" href="#" id="cart"><i class="fas fa-shopping-cart d-md-none d-xl-inline"></i> Giỏ hàng</a>
-                  </li>
-                  <li class="nav-item login"> <a href="#" class="nav-link active"><i class="fas fa-sign-in-alt d-md-none"></i> Đăng nhập</a>
-                  </li>
-                  <li class="nav-item sign-up"><a href="#" class="nav-link active"><i class="fas fa-register"></i><i class="fas fa-user-plus d-md-none"></i> Đăng ký</a>
-                  </li>
-                </ul>
-              </div>
-                  <button class="navbar-toggler col-2 col-sm" style="margin-left: 10px;" type="button" data-bs-toggle="collapse"
+              <button class="navbar-toggler col-2 col-sm" style="margin-left: 10px;" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
               aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-              <form class="d-flex col col-sm-10 col-md-12" style="padding-top: 5px;">
+              <form class="d-flex d-md-none col col-sm-10 col-md-12" style="padding-top: 5px;">
                 <input class="form-control col" type="search" placeholder="Nhập sản phẩm"
                   aria-label="Search">
                 <button class="btn btn-danger col-2 col-md-1" type="submit" id="search"><i class="fas fa-search"></i>
                 </button>
+                </form>
+              <div class="collapse navbar-collapse col-sm-12" id="navbarSupportedContent">
+                <ul class="navbar-nav col-12">
+                  <li class="nav-item">
+                    <a class="nav-link  fs-6" aria-current="page" href="#"><i class="fas fa-home d-md-none d-xl-inline"></i> Trang
+                      chủ</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle fs-6" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-desktop d-md-none d-xl-inline"></i> Sản phẩm
+                    </a>
+                    <ul class="dropdown-menu bg-custom" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item text-white" href="#">Laptop</a></li>
+                      <li><a class="dropdown-item text-white" href="#">Máy tính để bàn</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link fs-6 "><i class="fas fa-wrench d-md-none d-xl-inline"></i> Xây dựng cấu hình</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link fs-6 "><i class="fas fa-heart d-md-none d-xl-inline"
+                        style="color: rgb(255, 58, 58);"></i> Sản phẩm yêu thích</a>
+                  </li>
+                  <li class="nav-item justify-content-end">
+                    <a class="nav-link fs-6 " href="#" id="cart"><i class="fas fa-shopping-cart d-md-none d-xl-inline"></i> Giỏ hàng</a>
+                  </li>
+                  <li class="nav-item" id="login"> <a href="#loginFormToggle" data-bs-toggle="modal" class="nav-link "><i class="fas fa-sign-in-alt d-md-none"></i> Đăng nhập</a>
+                  </li>
+                  <li class="nav-item" id="sign-up"><a data-bs-toggle="modal" href="#sign-upFormToggle" class="nav-link "><i class="fas fa-register"></i><i class="fas fa-user-plus d-md-none"></i> Đăng ký</a>
+                  </li>
+                </ul>
+              </div>
+              <form class="d-none d-md-flex col col-sm-10" style="padding-top: 5px;">
+                <input class="form-control col" type="search" placeholder="Nhập sản phẩm"
+                  aria-label="Search">
+                  <button class="btn btn-danger col-2 col-md-1" type="submit" id="search"><i class="fas fa-search"></i>
+                  </button>
               </form>
             </div>
           </div>
@@ -115,8 +188,8 @@
         </div>
       </div>
       <div class="col col-sm-12 col-md-3 d-sm-flex d-md-block justify-content-center">
-        <img class="img-content d-flex col-12 col-sm" src="Images/BANNER-LAPTOP.jpg" alt="">
-        <img class="img-content d-flex col-12 col-sm" src="Images/cauhinh3.jpg" alt="">
+        <img class=" img-content col-12 col-sm" src="Images/BANNER-LAPTOP.jpg" alt="">
+        <img class=" img-content col-12 col-sm" src="Images/cauhinh3.jpg" alt="">
       </div>
     </div>
     <section class="container-fluid container-lg">
@@ -342,6 +415,7 @@
       </div>
     </div>
   </footer>
+  <script src="JavaScript.js"></script>
 </body>
 
 </html>
