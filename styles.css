@@ -4,9 +4,6 @@ body{
 .modal-content{
     background-color: #f0f0f0;
 }
-.container-fluid{
-    position: relative;
-}
 .modal .form-control{
     margin-bottom: 20px;
 }
@@ -64,10 +61,14 @@ body{
     padding: 5px 0px;
     margin: 0px 34px;
 }
+
 .merchandise{
     padding: 5px 15px ;
     margin-left: -10px;
     margin-right: -10px;
+}
+.merchandise-img{
+    border-width: 15px;
 }
 .breadcrumb{
     padding: 10px;
@@ -84,7 +85,7 @@ body{
 .buy{
     text-align: center;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     background: rgb(255,80,80);
     background: linear-gradient(90deg, rgba(255,80,80,1) 45%, rgba(253,188,45,1) 100%);
     transition: 0.3s;
@@ -102,7 +103,7 @@ body{
     color: white;
 }
 .card{
-    transition: 0.3s;
+    transition: 0.1s;
 }
 .card:hover{
     
@@ -142,23 +143,53 @@ body{
         top: -5px;
     }
 }
-@media (min-width: 768px) {
-    #login{
-        position: absolute;
-        right: 15px;
-        top: 5px;
-    }
-    #sign-up{
-        position: absolute;
-        right: 120px;
-        top: 5px;
-    }
-}
 @media (max-width: 576px) {
     .modal-content{
         background: linear-gradient(-45deg, #d64545, #ec8c5f, #e7556e, #b763c2);
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;    
     }
-    
+    .modal-content .modal-header{
+        color: white;
+    }
 }
+
+  @media (min-width: 350px){
+    .custom-tooltip {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .custom-tooltip .tooltiptext {
+        visibility: hidden ;
+        width: 380px;
+        background-color: rgb(177, 177, 177);
+        color: rgb(0, 0, 0);
+        border-radius: 6px;
+        z-index: 1;
+        padding: 5px 5px;
+        position: absolute;
+        top: 140%;
+    
+      }
+      .custom-tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 45%;
+        margin-left: -150px;
+        border-width: 15px;
+        border-style: solid;
+        border-color: transparent transparent rgb(179, 179, 179) transparent;
+        
+      }
+      
+      .custom-tooltip:hover .tooltiptext {
+        visibility: visible;    
+      }
+      .tooltiptext>h6{
+          color: #d64545;
+      }
+
+  }
+  
