@@ -154,42 +154,60 @@ body{
     }
 }
 
-  @media (min-width: 350px){
-    .custom-tooltip {
-        position: relative;
-        display: inline-block;
-      }
-      
-      .custom-tooltip .tooltiptext {
-        visibility: hidden ;
-        width: 380px;
-        background-color: rgb(177, 177, 177);
-        color: rgb(0, 0, 0);
-        border-radius: 6px;
-        z-index: 5;
-        padding: 5px 5px;
-        position: absolute;
-        top: 120%;
+.custom-tooltip {
+    position: relative;
+    display: inline-block;
+    }
     
-      }
-      .custom-tooltip .tooltiptext::after {
-        content: "";
-        position: absolute;
-        bottom: 95%;
-        left: 45%;
-        margin-left: -150px;
-        border-width: 15px;
-        border-style: solid;
-        border-color: transparent transparent rgb(179, 179, 179) transparent;
-        
-      }
-      
-      .custom-tooltip:hover .tooltiptext {
-        visibility: visible;    
-      }
-      .tooltiptext>h6{
-          color: #d64545;
-      }
+.custom-tooltip .tooltiptext {
+    visibility: hidden ;
+    width: 380px;
+    background-color: rgb(247, 247, 247);
+    color: rgb(0, 0, 0);
+    border-radius: 6px;
+    z-index: 5;
+    padding: 5px 5px;
+    position: absolute;
+    top: 120%;
+    box-shadow: 2px 2px 4px #66666680;
+    opacity: 0;
+    transition: opacity 0.5s;
 
-  }
-  
+}
+.custom-tooltip .tooltiptext::before {
+    content: "";
+    position: absolute;
+    bottom: 525px;
+    left: 45%;
+    margin-left: -150px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent rgb(248, 248, 248) transparent;
+    z-index: 5;
+
+
+}
+.custom-tooltip:hover .tooltiptext {
+    visibility: visible;    
+    opacity: 1;
+}
+.tooltiptext>h6{
+    color: #d64545;
+    border-style: double;
+    padding-bottom: 10px;
+    border-width: 0px 0px 1px 0px;
+    border-color: rgb(216, 216, 216);
+}
+.tooltiptext .tooltip-content .col-8{
+    margin-left: -10px;
+    margin-bottom: 10px;
+}
+.tooltiptext .tooltip-content img {
+    margin-left: -20px;
+    margin-bottom: 10px;
+    max-width: 100px;
+    margin-top: 10px;
+}
+.tooltiptext .tooltip-content:hover{
+    background-color: rgba(173, 173, 173, 0.582);
+}
