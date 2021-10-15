@@ -172,17 +172,18 @@ body{
     box-shadow: 2px 2px 4px #66666680;
     opacity: 0;
     transition: opacity 0.5s;
+    object-fit: scale-down;
 
 }
 .custom-tooltip .tooltiptext::before {
     content: "";
     position: absolute;
-    bottom: 525px;
-    left: 45%;
-    margin-left: -150px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -160px;
     border-width: 15px;
     border-style: solid;
-    border-color: transparent transparent rgb(248, 248, 248) transparent;
+    border-color: transparent transparent rgb(247, 247, 247) transparent;
     z-index: 5;
 
 
@@ -191,7 +192,7 @@ body{
     visibility: visible;    
     opacity: 1;
 }
-.tooltiptext>h6{
+.tooltiptext .tooltip-header{
     color: #d64545;
     border-style: double;
     padding-bottom: 10px;
@@ -209,5 +210,11 @@ body{
     margin-top: 10px;
 }
 .tooltiptext .tooltip-content:hover{
+    cursor: pointer;
     background-color: rgba(173, 173, 173, 0.582);
+}
+.tooltiptext .tooltip-footer{
+    padding: 5px;
+    border: #cecece double;
+    border-width: 1px 0px 0px 0px;
 }

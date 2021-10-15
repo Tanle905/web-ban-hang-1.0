@@ -8,5 +8,7 @@ const body = $('body');
 const signUp = $('#sign-up');
 const login = $$('#login');
 const merchandises = $$('.card img')
-console.log(merchandises)
 merchandises.forEach(merchandise => merchandise.onclick = ()=> window.location.assign('https://tanle905.github.io/'))
+
+const tooltipContents = $$('.tooltip-content')
+tooltipContents.forEach(tooltipContent => tooltipContent.onclick = ()=> window.location.assign('https://tanle905.github.io/'))
