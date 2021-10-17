@@ -1,5 +1,5 @@
 body{
-    background-color: #f0f0f0;
+    background-color: #ebebeb;
 }
 .modal-content{
     background-color: #f0f0f0;
@@ -40,18 +40,20 @@ body{
 }
 
 .img-content{
-    position: relative;
+    width: 107%;
     border-radius: 3px; 
-    max-width: 370px;
-    margin-left: -15px;
-    object-fit: scale-down;
-
-    
+    margin: 5px -10px -5px -8px;
+}
+.img-bottom{
+    border-radius: 3px; 
+    width: 1300%;
+    height: auto;
+    margin-left: -10px;
+    margin-right: -20px;        
 }
 .container-carousel{
     padding-top: 5px;
 }
-
 .merchandise-grid{
     padding: 5px;
 }
@@ -171,7 +173,7 @@ body{
     top: 120%;
     box-shadow: 2px 2px 4px #66666680;
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: opacity 0.3s;
     object-fit: scale-down;
 
 }
@@ -218,3 +220,8 @@ body{
     border: #cecece double;
     border-width: 1px 0px 0px 0px;
 }
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	

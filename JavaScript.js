@@ -12,3 +12,4 @@ merchandises.forEach(merchandise => merchandise.onclick = ()=> window.location.a
 
 const tooltipContents = $$('.tooltip-content')
 tooltipContents.forEach(tooltipContent => tooltipContent.onclick = ()=> window.location.assign('https://tanle905.github.io/'))
+
