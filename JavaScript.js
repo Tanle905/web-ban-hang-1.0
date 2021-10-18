@@ -13,3 +13,9 @@ merchandises.forEach(merchandise => merchandise.onclick = ()=> window.location.a
 const tooltipContents = $$('.tooltip-content')
 tooltipContents.forEach(tooltipContent => tooltipContent.onclick = ()=> window.location.assign('https://www.youtube.com/watch?v=dQw4w9WgXcQ'))
 
+const imgContents = $$('.img-content')
+imgContents.forEach(imgContent => imgContent.onclick = ()=> window.location.assign('https://www.youtube.com/watch?v=dQw4w9WgXcQ'))
+
+const imgBottoms = $$('.img-bottom')
+imgBottoms.forEach(imgBottom => imgBottom.onclick = ()=> window.location.assign('https://www.youtube.com/watch?v=dQw4w9WgXcQ'))
+
