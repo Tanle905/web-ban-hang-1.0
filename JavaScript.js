@@ -19,3 +19,19 @@ imgContents.forEach(imgContent => imgContent.onclick = ()=> window.location.assi
 const imgBottoms = $$('.img-bottom')
 imgBottoms.forEach(imgBottom => imgBottom.onclick = ()=> window.location.assign('https://www.youtube.com/watch?v=dQw4w9WgXcQ'))
 
+const page1 = $('#page-1')
+const page2 = $('#page-2')
+const btnPage1 = $('#page-1-button')
+const btnPage2 = $('#page-2-button')
+btnPage1.onclick = ()=> {
+    page2.classList.add("d-none")
+    page1.classList.remove("d-none")
+    btnPage1.classList.add("active")
+    btnPage2.classList.remove("active")
+}
+btnPage2.onclick = ()=> {
+    page1.classList.add("d-none")
+    page2.classList.remove("d-none")
+    btnPage2.classList.add("active")
+    btnPage1.classList.remove("active")
+}
