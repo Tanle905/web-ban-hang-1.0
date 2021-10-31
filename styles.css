@@ -253,3 +253,15 @@ body{
 	.navbar .nav-item:hover .dropdown-menu{ display: block; }
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 }	
+
+/* Set the size of the div element that contains the map */
+#map {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px lightgray;
+  }
+
+  #product-info img{
+      width: 100%;
+  }

@@ -35,3 +35,19 @@ btnPage2.onclick = ()=> {
     btnPage2.classList.add("active")
     btnPage1.classList.remove("active")
 }
+
+// Initialize and add the map
+function initMap() {
+    // The location of CTU
+    const CTU = { lat: 10.03124188709686, lng:105.77091693878175 };
+    // The map, centered at CTU
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 14,
+      center: CTU,
+    });
+    // The marker, positioned at CTU
+    const marker = new google.maps.Marker({
+      position: CTU,
+      map: map,
+    });
+  }

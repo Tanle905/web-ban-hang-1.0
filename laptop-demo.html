@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chao mung den voi website</title>
+  <link rel="icon" href="Images/Daco_2400240.png" type="image/icon type">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <section>
+    <div class="modal" id="sign-upFormToggle" aria-hidden="true" aria-labelledby="sign-upFormToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-md modal-fullscreen-sm-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="sign-upFormToggleLabel">Đăng ký</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="justify-content-center">
+              <div class="">
+                <input type="text" class="form-control" placeholder="Nhập Email của bạn." id="signUpUserAccount">
+              </div>
+              <div class="">
+                <input type="password" class="form-control" placeholder="Nhập mật khẩu của bạn."
+                  id="signUpUserPassword">
+              </div>
+              <div class="">
+                <input type="password" class="form-control " placeholder="Vui lòng nhập lại mật khẩu."
+                  id="signUpUserPasswordConfirm">
+              </div>
+              <div class="row">
+                <button class="btn btn-primary col-4 col-sm-3" type="submit" style="margin-left: 15px;">Đăng ký</button>
+                <div class="col-1 d-none d-sm-block align-self-center justify-content-center">
+                  <h6>Or</h6>
+                </div>
+                <button class="btn btn-primary col-3 col-sm" type="submit"
+                  style="margin: 15px;background-color: rgb(221, 70, 70);border:0cm;"><i class="fab fa-google"></i>
+                  <span class="d-none d-sm-inline">Google</span></button>
+                <button class="btn btn-primary col-3 col-sm" type="submit" style="margin-right: 15px;"><i
+                    class="fab fa-facebook"></i> <span class="d-none d-sm-inline">Facebook</span></button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <a href="#loginFormToggle" class="text-dark" data-bs-toggle="modal">Đã có tài khoản ?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="loginFormToggle" aria-hidden="true" aria-labelledby="loginFormToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginFormToggleLabel">Đăng nhập</h5>
+            <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="">
+                <input type="text" class="form-control" placeholder="Nhập Email của bạn." id="loginUserAccount">
+              </div>
+              <div class="">
+                <input type="password" class="form-control" placeholder="Nhập mật khẩu của bạn." id="loginUserPassword">
+              </div>
+              <div class="row">
+                <button class="btn btn-primary col-4 col-sm-3" type="submit" style="margin-left: 15px;">Đăng
+                  nhập</button>
+                <div class="col-1 d-none d-sm-inline align-self-center justify-content-center">
+                  <h6>Or</h6>
+                </div>
+                <button class="btn btn-primary col-3 col-sm" type="submit"
+                  style="margin: 15px;background-color: rgb(221, 70, 70);border:0cm;"><i class="fab fa-google"></i><span
+                    class="d-none d-sm-inline">Google</span></button>
+                <button class="btn btn-primary col-3 col-sm" type="submit" style="margin-right: 15px;"><i
+                    class="fab fa-facebook"></i><span class="d-none d-sm-inline">Facebook</span></button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-around">
+            <a href="#sign-upFormToggle" class="text-dark" data-bs-toggle="modal">Chưa có tài khoản ? Đăng kí ngay!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <header class="sticky">
+    </div>
+    <nav class="navbar navbar-dark navbar-expand-md bg-custom">
+      <div class="container justify-content-center">
+        <div class="row">
+          <div class="col-sm-12 col-xxl-2" style="margin: 0px -15px -15px 0px;">
+            <a class="navbar-brand d-none d-sm-flex d-xl-block justify-content-center" href="#"><img
+                src="Images/7b9eb01979124d6da77cfcddd7e4dfda.png" alt=""></a>
+          </div>
+          <div class="col col-sm">
+            <div class="row">
+              <button class="navbar-toggler col-2 col-sm" style="margin-left: 10px;" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <form class="d-flex d-md-none col col-sm-10 col-md-12" style="padding-top: 5px;">
+                <input class="form-control col" type="search" placeholder="Nhập sản phẩm" aria-label="Search">
+                <button class="btn btn-danger col-2 col-md-1" type="submit" id="search"><i class="fas fa-search"></i>
+                </button>
+              </form>
+              <div class="collapse navbar-collapse col-sm-12" id="navbarSupportedContent">
+                <ul class="navbar-nav col-12">
+                  <li class="nav-item">
+                    <a class="nav-link  fs-6" aria-current="page" href="#"><i
+                        class="fas fa-home d-md-none d-lg-inline"></i> Trang
+                      chủ</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle fs-6" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-desktop d-md-none d-lg-inline"></i> Sản phẩm
+                    </a>
+                    <ul class="dropdown-menu bg-custom" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item text-white" href="#">Laptop</a></li>
+                      <li><a class="dropdown-item text-white" href="#">Máy tính để bàn</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link fs-6 "><i class="fas fa-wrench d-md-none d-lg-inline"></i> Xây dựng cấu
+                      hình</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link fs-6 "><i class="fas fa-heart d-md-none d-lg-inline"
+                        style="color: rgb(255, 58, 58);"></i> Sản phẩm yêu thích</a>
+                  </li>
+                  <li class="nav-item justify-content-end custom-tooltip">
+                    <a class="nav-link fs-6" href="#" id="cart"><i
+                        class="fas fa-shopping-cart d-md-none d-lg-inline "></i> Giỏ hàng</a>
+                    <div class="tooltiptext d-none d-lg-block">
+                      <div class="tooltip-header">
+                        <h6>Giỏ hàng</h6>
+                      </div>
+                      <div class="tooltip-content container-fluid">
+                        <div class="row align-items-end">
+                          <img src="Images/60584_victus_mica_silver_1-510x510.jpg" class="col" alt="">
+                          <div class="col-8">
+                            <div class="row">
+                              <h6 class="col-12">Laptop HP</h6>
+                              <h7 class="col-6">23.999.000</h7>
+                              <h6 class="col">Số lượng</h6>
+                              <span class="itemQuantity col-1">x1</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tooltip-content container-fluid">
+                        <div class="row align-items-end">
+                          <img src="Images/60584_victus_mica_silver_1-510x510.jpg" class="col" alt="">
+                          <div class="col-8">
+                            <div class="row">
+                              <h6 class="col-12">Laptop HP</h6>
+                              <h7 class="col-6">23.999.000</h7>
+                              <h6 class="col">Số lượng</h6>
+                              <span class="itemQuantity col-1">x1</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tooltip-content container-fluid">
+                        <div class="row align-items-end">
+                          <img src="Images/60584_victus_mica_silver_1-510x510.jpg" class="col" alt="">
+                          <div class="col-8">
+                            <div class="row">
+                              <h6 class="col-12">Laptop HP</h6>
+                              <h7 class="col-6">23.999.000</h7>
+                              <h6 class="col">Số lượng</h6>
+                              <span class="itemQuantity col-1">x1</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tooltip-content container-fluid">
+                        <div class="row align-items-end">
+                          <img src="Images/60584_victus_mica_silver_1-510x510.jpg" class="col" alt="">
+                          <div class="col-8">
+                            <div class="row">
+                              <h6 class="col-12">Laptop HP</h6>
+                              <h7 class="col-6">23.999.000</h7>
+                              <h6 class="col">Số lượng</h6>
+                              <span class="itemQuantity col-1">x1</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tooltip-content container-fluid">
+                        <div class="row align-items-end">
+                          <img src="Images/60584_victus_mica_silver_1-510x510.jpg" class="col" alt="">
+                          <div class="col-8">
+                            <div class="row">
+                              <h6 class="col-12">Laptop HP</h6>
+                              <h7 class="col-6">23.999.000</h7>
+                              <h6 class="col">Số lượng</h6>
+                              <span class="itemQuantity col-1">x1</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tooltip-content container-fluid">
+                        <div class="row align-items-end">
+                          <img src="Images/60584_victus_mica_silver_1-510x510.jpg" class="col" alt="">
+                          <div class="col-8">
+                            <div class="row">
+                              <h6 class="col-12">Laptop HP</h6>
+                              <h7 class="col-6">23.999.000</h7>
+                              <h6 class="col">Số lượng</h6>
+                              <span class="itemQuantity col-1">x1</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tooltip-content container-fluid">
+                        <div class="row align-items-end">
+                          <img src="Images/60584_victus_mica_silver_1-510x510.jpg" class="col" alt="">
+                          <div class="col-8">
+                            <div class="row">
+                              <h6 class="col-12">Laptop HP</h6>
+                              <h7 class="col-6">23.999.000</h7>
+                              <h6 class="col">Số lượng</h6>
+                              <span class="itemQuantity col-1">x1</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tooltip-content container-fluid">
+                        <div class="row align-items-end">
+                          <img src="Images/60584_victus_mica_silver_1-510x510.jpg" class="col" alt="">
+                          <div class="col-8">
+                            <div class="row">
+                              <h6 class="col-12">Laptop HP</h6>
+                              <h7 class="col-6">23.999.000</h7>
+                              <h6 class="col">Số lượng</h6>
+                              <span class="itemQuantity col-1">x1</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tooltip-footer d-flex justify-content-end">
+                        <a href="#"><button role="button" class="btn btn-danger">Mua ngay</button></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item" id="login"> <a href="#loginFormToggle" data-bs-toggle="modal"
+                      class="nav-link "><i class="fas fa-sign-in-alt d-md-none"></i> Đăng nhập</a>
+                  </li>
+                  <li class="nav-item" id="sign-up"><a data-bs-toggle="modal" href="#sign-upFormToggle"
+                      class="nav-link "><i class="fas fa-register"></i><i class="fas fa-user-plus d-md-none"></i> Đăng
+                      ký</a>
+                  </li>
+                </ul>
+              </div>
+              <form class="d-none d-md-flex col col-sm-10" style="padding-top: 5px;">
+                <input class="form-control col" type="search" placeholder="Nhập sản phẩm" aria-label="Search">
+                <button class="btn btn-danger col-2 col-md-1" type="submit" id="search"><i class="fas fa-search"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="container-fluid container-lg">
+    <div class="col-sm">
+      <nav>
+        <ol class="breadcrumb fs-6">
+          <li class="breadcrumb-item"><a href="#" style="text-decoration: none;">Trang chủ <i
+                class="fas fa-home "></i></a></li>
+          <li class="breadcrumb-item"><a href="#" style="text-decoration: none;">Laptop <i class="fa fa-laptop"
+                aria-hidden="true"></i></a></li>
+          <li class="breadcrumb-item current">Laptop Gaming Acer Predator Helios 300 PH315 54 74RU</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  </section>
+  <div class="container product">
+    <div class="row">
+      <div class="col-12 col-md-5">
+        <img src="Images/predator_helios_300__1__14c45ceefed948a6abb6d74ce67256d5.png" alt="" class="w-100">
+      </div>
+      <div class="col-12 col-md px-5">
+        <h3>Laptop Gaming Acer Predator Helios 300 PH315 54 74RU</h3>
+        <h4>Thông tin chung:</h4>
+        <ul>
+          <li>
+            <h6>Nhà sản xuất<span>: Acer</span>
+          </li>
+          <li>
+            <h6>Bảo hành</h6><span>: 12 tháng</span>
+          </li>
+          <li>
+            <h6>Tình trạng</h6><span>: Mới</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="product-info-tab" data-bs-toggle="tab" data-bs-target="#product-info"
+            type="button" role="tab" aria-controls="product-info" aria-selected="true"><span style="color: black;">Chi tiết</span></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="product-warranty-tab" data-bs-toggle="tab" data-bs-target="#product-warranty"
+            type="button" role="tab" aria-controls="product-warranty" aria-selected="false"><span style="color: black;">Thông tin bảo hành</span></button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent" >
+        <div class="tab-pane fade show active" id="product-info" role="tabpanel" aria-labelledby="product-info-tab">
+          <div class="tab-content">
+            <div >
+              <p>
+              </p>
+              <h2><span style="font-size:18px"><strong>THÔNG SỐ KĨ THUẬT :</strong></span></h2>
+              <div class="table-responsive">
+                <table id="tblGeneralAttribute" border="1" cellpadding="3" cellspacing="0"
+                  style="border-collapse:collapse; border-spacing:0px; border:1px solid #eeeeee; box-sizing:border-box; color:#333333; font-family:Roboto,sans-serif; font-size:13px; line-height:20px; margin-bottom:20px; margin-left:auto; margin-right:auto; max-width:100%; min-width:500px; width:100%"
+                  class="table table-bordered">
+                  <tbody style="box-sizing: border-box;">
+                    <tr style="box-sizing:border-box" class="row-info">
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:18.5209%">
+                        <p><span style="color:#000000">Hãng sản xuất</span></p>
+                      </td>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:78.4791%">
+                        <p><span style="color:#000000">Acer</span></p>
+                      </td>
+                    </tr>
+                    <tr style="box-sizing:border-box" class="row-info">
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:18.5209%">
+                        <p><span style="color:#000000">Bảo hành</span></p>
+                      </td>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:78.4791%">
+                        <p><span style="color:#000000">12 Tháng</span></p>
+                      </td>
+                    </tr>
+                    <tr style="box-sizing:border-box" class="row-info">
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:18.5209%">
+                        <p><span style="color:#000000">CPU</span></p>
+                      </td>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:78.4791%">
+                        <p>Intel® Core™ i7-11800H&nbsp;upto 4.60GHz, 8 nhân&nbsp;16 luồng</p>
+                      </td>
+                    </tr>
+                    <tr style="box-sizing:border-box" class="row-info">
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:18.5209%">
+                        <p><span style="color:#000000">RAM</span></p>
+                      </td>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:78.4791%">
+                        16GB (8x2) DDR4 3200MHz (2x SO-DIMM socket, up to 32GB SDRAM)</td>
+                    </tr>
+                    <tr style="box-sizing:border-box" class="row-info">
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:18.5209%">
+                        <p><span style="color:#000000">Ổ cứng</span></p>
+                      </td>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:78.4791%">
+                        <p>512GB SSD M.2 PCIE (nâng cấp tối đa 2TB SSD PCIe NVMe và 2TB HDD 2.5-inch 5400 RPM)</p>
+                      </td>
+                    </tr>
+                    <tr style="box-sizing:border-box" class="row-info">
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:18.5209%">
+                        <p><span style="color:#000000">Card đồ họa</span></p>
+                      </td>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:78.4791%">
+                        <p>NVIDIA® GeForce RTX™ 3070&nbsp;8GB GDDR6</p>
+                      </td>
+                    </tr>
+                    <tr style="box-sizing:border-box" class="row-info">
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:18.5209%">
+                        <p><span style="color:#000000">Màn hình</span></p>
+                      </td>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:78.4791%">
+                        <p>15.6" QHD (2560 x 1440) IPS, 165Hz slim bezel LCD, Acer ComfyView LED-backlit TFT LCD, 300
+                          nits, 100% sRGB</p>
+                      </td>
+                    </tr>
+                    <tr style="box-sizing:border-box" class="row-info">
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:18.5209%">
+                        <p><span style="color:#000000">Âm thanh</span></p>
+                      </td>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:78.4791%">
+                        <p><span style="color:#000000">DTS® X:Ultra Audio</span></p>
+                      </td>
+                    </tr>
+                    <tr style="box-sizing:border-box" class="row-info">
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:18.5209%">
+                        <p><span style="color:#000000">Cổng giao tiếp</span></p>
+                      </td>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:78.4791%">
+                        <p>1 x&nbsp;Cổng USB Type-C USB 3.2 Gen 2 (up to 10 Gbps)<br>1 x Cổng USB 3.2 Gen 2 cổng có tính
+                          năng sạc USB tắt nguồn<br>2 x Cổng USB 3.2 Gen 1&nbsp;<br>1 x Cổng HDMI®2.1 hỗ
+                          trợ&nbsp;HDCP<br>1 x Cổng Mini DisplayPort 1.4<br>1 x Cổng 3.5 mm headphone/speaker<br>1 x
+                          Cổng Ethernet (RJ-45)</p>
+                      </td>
+                    </tr>
+                    <tr style="box-sizing:border-box" class="row-info">
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:18.5209%">
+                        <p><span style="color:#000000">Đọc thẻ nhớ</span></p>
+                      </td>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:78.4791%">
+                        <p><span style="color:#000000">None</span></p>
+                      </td>
+                    </tr>
+                    <tr style="box-sizing:border-box" class="row-info">
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:18.5209%">
+                        <p><span style="color:#000000">Chuẩn LAN</span></p>
+                      </td>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:78.4791%">
+                        <p>Killer™ Ethernet E2600</p>
+                      </td>
+                    </tr>
+                    <tr style="box-sizing:border-box" class="row-info">
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:18.5209%">
+                        <p><span style="color:#000000">Chuẩn WIFI</span></p>
+                      </td>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:78.4791%">
+                        <p>Wi-Fi 6 AX</p>
+                      </td>
+                    </tr>
+                    <tr style="box-sizing:border-box" class="row-info">
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:18.5209%">
+                        <p><span style="color:#000000">Bluetooth</span></p>
+                      </td>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:78.4791%">
+                        <p><span style="color:#000000">v5.1</span></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:18.5209%">
+                        Bàn phím</td>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:78.4791%">
+                        <span style="color:#000000">Led RGB 4 Vùng</span></td>
+                    </tr>
+                    <tr style="box-sizing:border-box" class="row-info">
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:18.5209%">
+                        <p><span style="color:#000000">Webcam</span></p>
+                      </td>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:78.4791%">
+                        <p>Acer Crystal Eye 720p</p>
+                      </td>
+                    </tr>
+                    <tr style="box-sizing:border-box" class="row-info">
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:18.5209%">
+                        <p><span style="color:#000000">Hệ điều hành</span></p>
+                      </td>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:78.4791%">
+                        <p><span style="color:#000000">Windows 10 Home</span></p>
+                      </td>
+                    </tr>
+                    <tr style="box-sizing:border-box" class="row-info">
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:18.5209%">
+                        <p><span style="color:#000000">Pin</span></p>
+                      </td>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:78.4791%">
+                        <p><span style="color:#000000">4 Cell 59 WHr</span></p>
+                      </td>
+                    </tr>
+                    <tr style="box-sizing:border-box" class="row-info">
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:18.5209%">
+                        <p><span style="color:#000000">Trọng lượng</span></p>
+                      </td>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:78.4791%">
+                        <p><span style="color:#000000">2.3&nbsp;kg</span></p>
+                      </td>
+                    </tr>
+                    <tr style="box-sizing:border-box" class="row-info">
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:18.5209%">
+                        <p><span style="color:#000000">Màu sắc</span></p>
+                      </td>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:78.4791%">
+                        <p><span style="color:#000000">Abyssal Black</span></p>
+                      </td>
+                    </tr>
+                    <tr style="box-sizing:border-box" class="row-info">
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:18.5209%">
+                        <p><span style="color:#000000">Kích thước</span></p>
+                      </td>
+                      <td
+                        style="border-color:#eeeeee; border-style:solid; border-width:1px; box-sizing:border-box; padding:8px; vertical-align:top; width:78.4791%">
+                        <p>363 (W) x 255 (D) x 22.9 (H) mm</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h2><strong><span style="font-size:22px">Đánh giá chi tiết laptop gaming&nbsp;Acer Predator Helios 300
+                    PH315 54 74RU</span></strong></h2>
+              <h3><span style="font-size:20px"><strong>Sức mạnh đến từ NVIDIA GeForce RTX 3070</strong></span></h3>
+              <p><span style="font-size:18px">RTX 3070 sẽ mang lại hiệu suất tối ưu cho game thủ và creator. Chiếc <a
+                    href="https://gearvn.com/collections/vga-card-man-hinh">card màn hình</a> được sở hữu sức mạnh bởi
+                  kiến trúc Ampere thế hệ 2 của NVIDIA - bao gồm công nghệ Ray Tracing mới, Lõi Tensor và khả năng
+                  streaming với bộ xử lý multiprocessor để có một bước nhảy vọt về hiệu năng.&nbsp;</span></p>
+              <p style="text-align: center"><img alt="GEARVN.COM - Laptop Gaming Acer Predator Helios 300 PH315 54 75YD"
+                  src="//file.hstatic.net/1000026716/file/gearvn-laptop-gaming-acer-predator-helios-300-ph315-54-75yd-1_9c882d6ead08465885660b462f5f1bd0_1024x1024.jpg">
+              </p>
+              <h3><span style="font-size:20px"><strong>Khả năng xử lý mạnh mẽ với Intel Gen 11</strong></span></h3>
+              <p><span style="font-size:18px">Ẩn sâu trong con quái vật Acer Predator Helios 300 là chiếc <a
+                    href="https://gearvn.com/collections/cpu-bo-vi-xu-ly">CPU</a> Intel i7 Gen 11 với mã - 11800H. Kết
+                  hợp cùng 16GB <a href="https://gearvn.com/collections/ram-pc">RAM</a>, &nbsp;Acer Predator Helios 300
+                  PH315 54 74RU&nbsp;mang lại khả năng xử lý với tốc độ đáng kinh ngạc bao gồm nhiều tác vụ công việc và
+                  giải trí.</span></p>
+              <p style="text-align: center"><img alt="GEARVN.COM - Laptop Gaming Acer Predator Helios 300 PH315 54 75YD"
+                  src="//file.hstatic.net/1000026716/file/gearvn-laptop-gaming-acer-predator-helios-300-ph315-54-75yd-2_1ac85b17e40c4a469a0fe2963f1f6dd7_1024x1024.jpg">
+              </p>
+              <h3><span style="font-size:20px"><strong>Công nghệ AeroBlade 3D Gen 5</strong></span></h3>
+              <p><span style="font-size:18px">&nbsp;Acer Predator Helios 300 PH315 54 74RU sẽ mang đến khả năng hoạt
+                  động theo thời gian dài nhờ vào công nghệ tản nhiệt AeroBlade 3D Gen 5.Thiết kế mới của quạt AeroBlade
+                  3D thế hệ thứ 5 giúp giảm tiếng ồn trong khi tăng lưu lượng gió - cho phép bạn tối đa hóa hiệu suất
+                  của mình, bất kể bạn đang làm tác vụ nào. Kết hợp cùng CoolBoost, quạt tản nhiệt điều chỉnh để giữ cân
+                  bằng nhiệt độ cho các khu vực quan trọng.</span></p>
+              <p style="text-align: center"><img alt="GEARVN.COM - Laptop Gaming Acer Predator Helios 300 PH315 54 75YD"
+                  src="//file.hstatic.net/1000026716/file/gearvn-laptop-gaming-acer-predator-helios-300-ph315-54-75yd-3_33494c82f27646e9869392638d7c10f0_1024x1024.jpg">
+              </p>
+              <h3><span style="font-size:20px"><strong>Vortex Flow</strong></span></h3>
+              <p><span style="font-size:18px">Thông qua tấm tản nhiệt được đặt ở vị trí trọng yếu, Acer Predator Helios
+                  300 PH315 54 74RU được tối ưu hóa luồng không khí, tăng khả năng làm mát tổng thể và giảm nhiệt độ bề
+                  mặt của chiếc <a href="https://gearvn.com/pages/laptop-gaming">laptop gaming</a> khủng này.</span></p>
+              <p style="text-align: center"><img alt="GEARVN.COM - Laptop Gaming Acer Predator Helios 300 PH315 54 75YD"
+                  src="//file.hstatic.net/1000026716/file/gearvn-laptop-gaming-acer-predator-helios-300-ph315-54-75yd-4_d8e3b62d52b54b07ac0fc813c5842a95_1024x1024.jpg">
+              </p>
+              <h3><span style="font-size:20px"><strong>Nâng cao trải nghiệm gaming</strong></span></h3>
+              <p><span style="font-size:18px">&nbsp;Acer Predator Helios 300 PH315 54 74RU sở hữu chiếc màn hình QHD,
+                  tần số quét vươn đến 165Hz và tốc độ phản hồi 3ms mang lại trải nghiệm gaming tốt nhất cho game thủ.
+                  Cũng tránh tình trạng ghosting và xé màn hình trên đứa con của Acer.</span></p>
+              <p style="text-align: center"><img alt="GEARVN.COM - Laptop Gaming Acer Predator Helios 300 PH315 54 75YD"
+                  src="//file.hstatic.net/1000026716/file/gearvn-laptop-gaming-acer-predator-helios-300-ph315-54-75yd-5_91f3033a250b475284fd769ea0d48706_1024x1024.jpg">
+              </p>
+              <h3><strong><span style="font-size:20px">Bàn phím RGB siêu đẹp</span><span
+                    style="font-size:18px">&nbsp;</span></strong></h3>
+              <p><span style="font-size:18px">Tôn lên vẻ đẹp đậm chất gaming không thể nào thiếu được chiếc bàn phím LED
+                  RGB 4 vùng trên &nbsp;Acer Predator Helios 300 PH315 54 74RU, nổi bật trên cụm phím WASD. Acer còn
+                  mang đến 2 phím chức năng là: Turbo giúp tăng tối đa hiệu năng ngay lập tức và PredatorSense giúp mở
+                  ứng dụng tiện ích chỉ có trên Acer Predator.</span></p>
+              <p style="text-align: center"><img alt="GEARVN.COM - Laptop Gaming Acer Predator Helios 300 PH315 54 75YD"
+                  src="//file.hstatic.net/1000026716/file/gearvn-laptop-gaming-acer-predator-helios-300-ph315-54-75yd-6_8bb5cff934364b0db8932f294ae19209_1024x1024.jpg">
+              </p>
+              <h3><span style="font-size:20px"><strong>Đa dạng các cổng kết nối</strong></span></h3>
+              <p><span style="font-size:18px">Acer Predator Helios 300 đầy đủ các cổng USB 3.2 - bao gồm cả Thunderbolt
+                  ™ 4 USB-C cực nhanh - hỗ trợ chức năng DisplayPort và Power Delivery. Thông số kỹ thuật HDMI 2.1 mới
+                  nhất cũng cho phép bạn dễ dàng cắm vào màn hình bên ngoài như 8K60, 4K120 hoặc thậm chí 10K.</span>
+              </p>
+              <p style="text-align: center"><img alt="GEARVN.COM - Laptop Gaming Acer Predator Helios 300 PH315 54 75YD"
+                  src="//file.hstatic.net/1000026716/file/gearvn-laptop-gaming-acer-predator-helios-300-ph315-54-75yd-7_7ec444f4942a48249a9b5e2edba95995_1024x1024.jpg">
+              </p>
+              <h3><span style="font-size:20px"><strong>Kết nối online mạnh mẽ</strong></span></h3>
+              <p><span style="font-size:18px">Trang bị Ethernet Intel ® Killer E2600 và Wi-Fi 6 và Control Center 2.0,
+                  bạn có tất cả các công cụ cần thiết để có một tốc độ mạng vượt trội đem lại trải nghiệm liền mạch
+                  trong các game online.</span></p>
+              <p style="text-align: center"><img alt="GEARVN.COM - Laptop Gaming Acer Predator Helios 300 PH315 54 75YD"
+                  src="//file.hstatic.net/1000026716/file/gearvn-laptop-gaming-acer-predator-helios-300-ph315-54-75yd-8_79cedf6c9b564d4fa8e4225b8b726be0_1024x1024.jpg">
+              </p>
+              <h3><span style="font-size:20px"><strong>DTS:X ULTRA</strong></span></h3>
+              <p><span style="font-size:18px">Công nghệ âm thanh DTS:X Ultra trên Acer Predator Helios 300 đem đến trải
+                  nghiệm thính giác tuyệt vời trong các tựa game, bài hát, bộ phim.</span></p>
+              <p style="text-align: center"><img alt="GEARVN.COM - Laptop Gaming Acer Predator Helios 300 PH315 54 75YD"
+                  src="//file.hstatic.net/1000026716/file/gearvn-laptop-gaming-acer-predator-helios-300-ph315-54-75yd-9_e19cf00dcd024009b940c0d8afc09ba9_1024x1024.jpg">
+              </p>
+              <p>&nbsp;</p>
+              <p></p>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="dacdiem">
+              <p></p>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="hrvproducttabs">
+              <p>
+
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="product-warranty" role="tabpanel" aria-labelledby="product-warranty-tab">
+          <h5>Bảo hành: 12 tháng</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <footer class="footer bg-custom text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 col-xl-4 address">
+          <h5>Địa chỉ</h5>
+          <address>
+            Can Tho University, CMT8<br>
+            Ninh Kieu, Can Tho<br>
+            Vietnam<br>
+            <span class="fa fa-phone"></span> Tel.: +852 1234 5678<br>
+            <span class="fa fa-fax"></span> Fax: +852 8765 4321<br>
+            <span class="fa fa-envelope"></span> Email: <a href="mailto:confusion@food.net"
+              class="text-light">tanb1910444@student.ctu.edu.vn</a>
+          </address>
+        </div>
+        <div class="col-12">
+          <div class="text-center">
+            <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                class="fab fa-google-plus fa-2x"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
+                class="fab fa-facebook fa-2x"></i></a>
+            <a href="http://www.linkedin.com/in/" class="btn btn-social-icon btn-linkedin"><i
+                class="fab fa-linkedin fa-2x"></i></a>
+            <a href="http://twitter.com/" class="btn btn-social-icon btn-twitter"><i
+                class="fab fa-twitter fa-2x"></i></a>
+            <a href="http://youtube.com/" class="btn btn-social-icon btn-google"><i
+                class="fab fa-youtube fa-2x"></i></a>
+            <a href="mailto:" class="btn btn-social-icon btn-google"><i class="fa fa-envelope fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <p>© Copyright 2021 Tran Viet Tan B1910444</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="JavaScript.js"></script>
+</body>
+
+</html>
