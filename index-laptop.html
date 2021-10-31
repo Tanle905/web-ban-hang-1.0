@@ -328,127 +328,221 @@
       <div class="col-sm">
         <nav>
           <ol class="breadcrumb fs-6">
-            <li class="breadcrumb-item active"><a href="#" style="text-decoration: none;">Trang chủ <i
-                  class="fas fa-home"></i></a></li>
+            <li class="breadcrumb-item"><a href="#" style="text-decoration: none;">Trang chủ <i
+                  class="fas fa-home    "></i></a></li>
+            <li class="breadcrumb-item active" aria-current="page">Laptop <i class="fa fa-laptop"
+                aria-hidden="true"></i></li>
           </ol>
         </nav>
       </div>
     </section>
   </section>
-  <section class="container-fluid container-lg p-3">
-    <div class="row">
-      <div class="row">
-        <h3>Các mẫu laptop bán chạy nhất hiện nay</h3>
-      </div>
-      <div class="row">
-        <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <img src="Images/s8twvKSN-gearvn-laptop-gaming-acer-aspire-7-a715-42g-r1sb-1-300x300.jpg"
-                  class="d-block w-25 col-3" alt="...">
-                <img src="Images/s8twvKSN-gearvn-laptop-gaming-acer-aspire-7-a715-42g-r1sb-1-300x300.jpg"
-                  class="d-block w-25 col-3" alt="...">
-                <img src="Images/s8twvKSN-gearvn-laptop-gaming-acer-aspire-7-a715-42g-r1sb-1-300x300.jpg"
-                  class="d-block w-25 col-3" alt="...">
-                <img src="Images/s8twvKSN-gearvn-laptop-gaming-acer-aspire-7-a715-42g-r1sb-1-300x300.jpg"
-                  class="d-block w-25 col-3" alt="...">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <img src="Images/s8twvKSN-gearvn-laptop-gaming-acer-aspire-7-a715-42g-r1sb-1-300x300.jpg"
-                  class="d-block w-25 col-3" alt="...">
-                <img src="Images/s8twvKSN-gearvn-laptop-gaming-acer-aspire-7-a715-42g-r1sb-1-300x300.jpg"
-                  class="d-block w-25 col-3" alt="...">
-                <img src="Images/s8twvKSN-gearvn-laptop-gaming-acer-aspire-7-a715-42g-r1sb-1-300x300.jpg"
-                  class="d-block w-25 col-3" alt="...">
-                <img src="Images/s8twvKSN-gearvn-laptop-gaming-acer-aspire-7-a715-42g-r1sb-1-300x300.jpg"
-                  class="d-block w-25 col-3" alt="...">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <img src="Images/s8twvKSN-gearvn-laptop-gaming-acer-aspire-7-a715-42g-r1sb-1-300x300.jpg"
-                  class="d-block w-25 col-3" alt="...">
-                <img src="Images/s8twvKSN-gearvn-laptop-gaming-acer-aspire-7-a715-42g-r1sb-1-300x300.jpg"
-                  class="d-block w-25 col-3" alt="...">
-                <img src="Images/s8twvKSN-gearvn-laptop-gaming-acer-aspire-7-a715-42g-r1sb-1-300x300.jpg"
-                  class="d-block w-25 col-3" alt="...">
-                <img src="Images/s8twvKSN-gearvn-laptop-gaming-acer-aspire-7-a715-42g-r1sb-1-300x300.jpg"
-                  class="d-block w-25 col-3" alt="...">
-              </div>
+  <section class="container-fluid container-lg merchandise-grid">
+    <div class="row merchandise-header">
+      <form action="">
+        <label for="sort" class="align-self-center d-none d-md-inline">Sắp xếp theo: </label>
+        <button type="submit" class="sort-button">Phổ biến</button>
+        <button type="submit" class="sort-button">Mới nhất</button>
+        <button type="submit" class="sort-button">Bán chạy</button>
+        <select name="sort" id="sort" class=" sort-button col-12 col-sm-1 w-auto">
+          <option value="" class="d-none">Giá</option>
+          <option value="byLowestPriceFirst">Thấp đến cao</option>
+          <option value="byHighestPriceFirst">Cao đến thấp</option>
+        </select>
+      </form>
+    </div>
+    <div class="justify-content-center">
+      <div class="row justify-content-start" id="page-1" style="padding-left: 7%;">
+        <div class="col-6 col-sm-3 merchandise">
+          <div class="card">
+            <img src="Images/60584_victus_mica_silver_1-510x510.jpg" alt="">
+            <div class="card-body">
+              <h6 class="card-title"> Laptop HP</h6>
+              <h6>Giá: <strong style="color: rgb(212, 76, 42);">16.990.000</strong></h6>
+              <a class="buy-link" href="#">
+                <h6 class="buy">Chọn mua</h6>
+              </a>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
+        <div class="col-6 col-sm-3 merchandise">
+          <div class="card">
+            <img src="Images/6386_acer_nitro_5_2021_an515_56-510x510.jpg" alt="">
+            <div class="card-body">
+              <h6 class="card-title">Laptop Acer</h6>
+              <h6>Giá: <strong style="color: rgb(212, 76, 42);">16.990.000</strong></h6>
+              <a class="buy-link" href="#">
+                <h6 class="buy">Chọn mua</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-3 merchandise">
+          <div class="card">
+            <img src="Images/G513QM-HN169T_1-510x510.jpg" alt="">
+            <div class="card-body">
+              <h6 class="card-title">Laptop ASUS</h6>
+              <h6>Giá: <strong style="color: rgb(212, 76, 42);">25.990.000</strong></h6>
+              <a class="buy-link" href="#">
+                <h6 class="buy">Chọn mua</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-3 merchandise">
+          <div class="card">
+            <img src="Images/hp-pavilion-gaming-1-510x510.jpg" alt="">
+            <div class="card-body">
+              <h6 class="card-title">Laptop HP</h6>
+              <h6>Giá: <strong style="color: rgb(212, 76, 42);">35.990.000</strong></h6>
+              <a class="buy-link" href="#">
+                <h6 class="buy">Chọn mua</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-3 merchandise">
+          <div class="card">
+            <img src="Images/60584_victus_mica_silver_1-510x510.jpg" alt="">
+            <div class="card-body">
+              <h6 class="card-title"> Laptop HP</h6>
+              <h6>Giá: <strong style="color: rgb(212, 76, 42);">16.990.000</strong></h6>
+              <a class="buy-link" href="#">
+                <h6 class="buy">Chọn mua</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-3 merchandise">
+          <div class="card">
+            <img src="Images/6386_acer_nitro_5_2021_an515_56-510x510.jpg" alt="">
+            <div class="card-body">
+              <h6 class="card-title">Laptop Acer</h6>
+              <h6>Giá: <strong style="color: rgb(212, 76, 42);">16.990.000</strong></h6>
+              <a class="buy-link" href="#">
+                <h6 class="buy">Chọn mua</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-3 merchandise">
+          <div class="card">
+            <img src="Images/G513QM-HN169T_1-510x510.jpg" alt="">
+            <div class="card-body">
+              <h6 class="card-title">Laptop ASUS</h6>
+              <h6>Giá: <strong style="color: rgb(212, 76, 42);">42.420.420</strong></h6>
+              <a class="buy-link" href="#">
+                <h6 class="buy">Chọn mua</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-3 merchandise">
+          <div class="card">
+            <img src="Images/hp-pavilion-gaming-1-510x510.jpg" alt="">
+            <div class="card-body">
+              <h6 class="card-title">Laptop HP</h6>
+              <h6>Giá: <strong style="color: rgb(212, 76, 42);">69.696.969</strong></h6>
+              <a class="buy-link" href="#">
+                <h6 class="buy">Chọn mua</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-3 merchandise">
+          <div class="card">
+            <img src="Images/60584_victus_mica_silver_1-510x510.jpg" alt="">
+            <div class="card-body">
+              <h6 class="card-title"> Laptop HP</h6>
+              <h6>Giá: <strong style="color: rgb(212, 76, 42);">16.990.000</strong></h6>
+              <a class="buy-link" href="#">
+                <h6 class="buy">Chọn mua</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-3 merchandise">
+          <div class="card">
+            <img src="Images/6386_acer_nitro_5_2021_an515_56-510x510.jpg" alt="">
+            <div class="card-body">
+              <h6 class="card-title">Laptop Acer</h6>
+              <h6>Giá: <strong style="color: rgb(212, 76, 42);">16.990.000</strong></h6>
+              <a class="buy-link" href="#">
+                <h6 class="buy">Chọn mua</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-3 merchandise">
+          <div class="card">
+            <img src="Images/G513QM-HN169T_1-510x510.jpg" alt="">
+            <div class="card-body">
+              <h6 class="card-title">Laptop ASUS</h6>
+              <h6>Giá: <strong style="color: rgb(212, 76, 42);">42.420.420</strong></h6>
+              <a class="buy-link" href="#">
+                <h6 class="buy">Chọn mua</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-3 merchandise">
+          <div class="card">
+            <img src="Images/hp-pavilion-gaming-1-510x510.jpg" alt="">
+            <div class="card-body">
+              <h6 class="card-title">Laptop HP</h6>
+              <h6>Giá: <strong style="color: rgb(212, 76, 42);">69.696.969</strong></h6>
+              <a class="buy-link" href="#">
+                <h6 class="buy">Chọn mua</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-    <div class="row">
-      <div class="row">
-        <h3>Các mẫu máy bàn bán chạy nhất hiện nay</h3>
-      </div>
-      <div class="row">
-        <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <img src="Images/522b52az.jpg"
-                  class="d-block w-25 col-3" alt="...">
-                <img src="Images/522b52az.jpg"
-                  class="d-block w-25 col-3" alt="...">
-                <img src="Images/522b52az.jpg"
-                  class="d-block w-25 col-3" alt="...">
-                <img src="Images/522b52az.jpg"
-                  class="d-block w-25 col-3" alt="...">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <img src="Images/522b52az.jpg"
-                  class="d-block w-25 col-3" alt="...">
-                <img src="Images/522b52az.jpg"
-                  class="d-block w-25 col-3" alt="...">
-                <img src="Images/522b52az.jpg"
-                  class="d-block w-25 col-3" alt="...">
-                <img src="Images/522b52az.jpg"
-                  class="d-block w-25 col-3" alt="...">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <img src="Images/522b52az.jpg"
-                  class="d-block w-25 col-3" alt="...">
-                <img src="Images/522b52az.jpg"
-                  class="d-block w-25 col-3" alt="...">
-                <img src="Images/522b52az.jpg"
-                  class="d-block w-25 col-3" alt="...">
-                <img src="Images/522b52az.jpg"
-                  class="d-block w-25 col-3" alt="...">
-              </div>
-            </div>
+    <div class="row justify-content-start d-none" id="page-2" style="padding-left: 7%;">
+      <div class="col-6 col-sm-3 merchandise">
+        <div class="card">
+          <img src="Images/2ykEKePO-gearvn-laptop-gaming-acer-predator-helios-300-ph315-54-74ru-1-300x300.jpg" alt="">
+          <div class="card-body">
+            <h6 class="card-title"> Laptop Gaming Acer Predator Helios 300 PH315 54 74RU</h6>
+            <h6>Giá: <strong style="color: rgb(212, 76, 42);">16.990.000</strong></h6>
+            <a class="buy-link" href="laptop-demo.html">
+              <h6 class="buy">Chọn mua</h6>
+            </a>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
+      <div class="col-6 col-sm-3 merchandise">
+        <div class="card">
+          <img src="Images/EnKrcopt-hg072t_42ef14c7a9c645efadc7cd8e8829f904_large-300x300.png" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Laptop Gaming Asus ROG Strix G17 G713QR HG072T</h6>
+            <h6>Giá: <strong style="color: rgb(212, 76, 42);">16.990.000</strong></h6>
+            <a class="buy-link" href="#">
+              <h6 class="buy">Chọn mua</h6>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-3 merchandise">
+        <div class="card">
+          <img src="Images/drH0xj4W-laptop_gaming_acer_aspire_7_a715_42g_r6zr-300x300.jpg" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Laptop Gaming Acer Aspire 7 A715 42G R1SB</h6>
+            <h6>Giá: <strong style="color: rgb(212, 76, 42);">72.990.000</strong></h6>
+            <a class="buy-link" href="#">
+              <h6 class="buy">Chọn mua</h6>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="row justify-content-end" style="margin-right: 5px;">
+      <button class="btn btn-outline-danger active col-1" type="button" id="page-1-button">1</button> &nbsp;
+      <button class="btn btn-outline-danger col-1" type="button" id="page-2-button">2</button>
     </div>
   </section>
   <footer class="footer bg-custom text-white">
@@ -468,9 +562,7 @@
         </div>
         <div id="map" class="col-md-5 col-xl-5 offset-3">
           <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-          <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1r7CVcpec5138ezrrZcmpuAhsP4PtJ-g&callback=initMap&libraries=&v=weekly&channel=2"
-            async></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1r7CVcpec5138ezrrZcmpuAhsP4PtJ-g&callback=initMap&libraries=&v=weekly&channel=2" async></script>
         </div>
         <div class="col-12">
           <div class="text-center">
