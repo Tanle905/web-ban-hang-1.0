@@ -44,6 +44,7 @@ body{
     width: 107%;
     border-radius: 3px; 
     margin: 5px -10px -5px -8px;
+    height: 50%;
 }
 .img-bottom{
     cursor: pointer;
@@ -144,18 +145,7 @@ body{
 		background-position: 0% 50%;
 	}
 }
-@media (min-width: 768px) {
-    #login{
-        position: absolute;
-        right: 15px;
-        top: -5px;
-    }
-    #sign-up{
-        position: absolute;
-        right: 120px;
-        top: -5px;
-    }
-}
+
 @media (max-width: 576px) {
     .modal-content{
         background: linear-gradient(-45deg, #d64545, #ec8c5f, #e7556e, #b763c2);
