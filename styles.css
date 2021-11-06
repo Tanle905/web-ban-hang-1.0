@@ -60,7 +60,6 @@ body{
 .carousel-inner{
     border-radius: 10px;
     width: 102%;
-    margin-top: 7px;
 }
 .merchandise-grid{
     padding-top: 5px;
@@ -240,6 +239,9 @@ body{
 	.navbar .nav-item .dropdown-menu{ display: none; }
 	.navbar .nav-item:hover .dropdown-menu{ display: block; }
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+    .navbar-brand img{
+        width: 100%;
+    }
 }	
 
 /* Set the size of the div element that contains the map */
