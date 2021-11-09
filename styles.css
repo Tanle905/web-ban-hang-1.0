@@ -132,7 +132,64 @@ body{
 .btn-social-icon{
     color: white;
 }
+.row.cart{
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 4px lightgray;
+}
+.row.cart .cart-header{
+    background-color: #d17a64;
+    color: white;
+    padding: 5px;
+    margin: 5px 0px;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.row.cart .cart-body{
+    padding: 5px;
+    margin: 5px 0px;
+    margin-top: -5px;
+    transition: 0.5s;
 
+}
+.row.cart .cart-body:hover{
+    border-bottom: 1px solid lightgray;
+}
+.row.cart div img{
+    width: 20%;
+    object-fit: cover;
+}
+.row.checkout{
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 4px lightgray;
+}
+.row.checkout .checkout-header{
+    margin-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+.row.checkout .checkout-body .row .row{
+    margin: 5px 0px;
+}
+.payment-method{
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px lightgray;
+    margin: 5px;
+    padding: 10px;
+    transition: 0.3s;
+}
+.payment-method:hover{
+    background-color: #d17a64;
+    cursor: pointer;
+}
+.payment-method.active{
+    background-color: #d17a64;
+    cursor: pointer;
+}
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;

@@ -51,3 +51,17 @@ function initMap() {
       map: map,
     });
   }
+
+const paymentMethod1 = $$("#payment-1");
+const paymentMethod2 = $$("#payment-2");
+
+paymentMethod1.onclick = ()=>{
+    paymentMethod1.classList.add("active")
+    paymentMethod2.classList.remove("active")
+
+}
+paymentMethod2.onclick = ()=>{
+  paymentMethod2.classList.add("active")
+  paymentMethod1.classList.remove("active")
+
+}
