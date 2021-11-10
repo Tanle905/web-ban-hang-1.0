@@ -29,15 +29,6 @@ const checked2 = ()=>{
   $('#payment-2').checked = true
 }
 
-window.scroll(function(){
-  $(".row.cart").stop().animate({"marginTop": (window.scrollTop()) + "px", "marginLeft":(window.scrollLeft()) + "px"}, "slow" );
-});
-var totaltext = "";
-for (var i = 0; i < 100; i++) {
-  totaltext += "scroll!<br />";
-}
-$('.row.checkout').html(totaltext);
-
 const page1 = $('#page-1')
 const page2 = $('#page-2')
 const btnPage1 = $('#page-1-button')
