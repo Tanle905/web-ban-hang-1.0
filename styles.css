@@ -150,16 +150,20 @@ body{
 .row.cart .cart-body{
     padding: 5px;
     margin: 5px 0px;
-    margin-top: -5px;
-    transition: 0.5s;
-
-}
-.row.cart .cart-body:hover{
-    border-bottom: 1px solid lightgray;
+    margin-top: 5px;
+border-bottom: 1px ridge lightgray;
 }
 .row.cart div img{
-    width: 20%;
-    object-fit: cover;
+    width: 125px;
+    object-fit: contain;
+}
+.row.cart .cart-footer{
+    background-color: #d17a64;
+    color: white;
+    padding: 5px;
+    margin: 5px 0px;
+    margin-top: -15px;
+    border-radius: 5px;
 }
 .row.checkout{
     padding: 15px;
@@ -183,12 +187,16 @@ body{
     transition: 0.3s;
 }
 .payment-method:hover{
-    background-color: #d17a64;
     cursor: pointer;
 }
-.payment-method.active{
-    background-color: #d17a64;
-    cursor: pointer;
+.payment-method input{
+    position: relative;
+    left: -10px;
+}
+.row.checkout .checkout-footer{
+    padding: 10px;
+    border-top: 1px ridge lightgray;
+    margin-top: 10px;
 }
 @keyframes gradient {
 	0% {
@@ -201,7 +209,6 @@ body{
 		background-position: 0% 50%;
 	}
 }
-
 @media (max-width: 576px) {
     .modal-content{
         background: linear-gradient(-45deg, #d64545, #ec8c5f, #e7556e, #b763c2);
