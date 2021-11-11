@@ -36,7 +36,6 @@ body{
     border-radius: 5px 50px 50px 5px;
 }
 .navbar-toggler{
-    margin-right: 0px;
 }
 
 .img-content{    
@@ -86,6 +85,12 @@ body{
     border-radius: 5px;
     border-width: 1px;
     box-shadow: 2px 2px 4px lightgray;
+    transition: 0.2s;
+}
+button.sort-button:hover{
+    background-color: #d64545;
+    color: white;
+    border-color: lightgray;
 }
 .buy{
     text-align: center;
@@ -127,6 +132,7 @@ body{
     border-radius: 25px;
     font-size: 15px;
     text-align: center;
+    box-shadow: 2px 2px 4px lightgray;
 }
 .address{
     padding-top: 15px;
@@ -226,7 +232,6 @@ border-bottom: 1px ridge lightgray;
         top: 0;
         z-index: 3;
       }
-
 }
 @media (max-width: 768px){
     .carousel-inner{
@@ -234,6 +239,10 @@ border-bottom: 1px ridge lightgray;
         width: 100%;
         height: 90%;
         margin-top: 7px;
+    }
+    .navbar-brand img{
+        width: 90%;
+        object-fit: scale-down;
     }
 }
 
@@ -318,6 +327,6 @@ border-bottom: 1px ridge lightgray;
     box-shadow: 2px 2px 5px rgb(141, 83, 83);
   }
 
-  #product-info img{
+#product-info img{
       width: 100%;
   }
