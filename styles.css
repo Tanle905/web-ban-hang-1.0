@@ -62,7 +62,7 @@ body{
     width: 102%;
 }
 .merchandise-grid{
-    padding: 10px 12px;
+    padding: 10px 15px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 2px 2px 4px lightgray;
@@ -71,11 +71,12 @@ body{
 
 .merchandise{
     padding: 10px 10px ;
+    padding-right: 15px;
 
 }
 .breadcrumb{
-    padding: 10px;
-    margin: 10px ;
+    padding: 10px 0px;
+    margin: 10px 0px;
     border-radius: 5px;
 }
 .sort-button{
@@ -107,7 +108,9 @@ body{
     color: white;
 }
 .card{
-    border-radius: 2px;
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: 2px 2px 4px lightgray;
     transition: 0.1s;
 }
 .card:hover{
@@ -133,7 +136,7 @@ body{
 }
 .row.cart{
     padding: 15px;
-    margin: 10px;
+    margin: 10px 0px;
     border-radius: 5px;
     background-color: white;
     box-shadow: 2px 2px 4px lightgray;
@@ -166,7 +169,7 @@ border-bottom: 1px ridge lightgray;
 }
 .row.checkout{
     padding: 15px;
-    margin: 10px;
+    margin: 10px 0px;
     border-radius: 5px;
     background-color: white;
     box-shadow: 2px 2px 4px lightgray;

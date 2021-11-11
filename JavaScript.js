@@ -19,8 +19,7 @@ imgContents.forEach(imgContent => imgContent.onclick = ()=> window.location.assi
 const imgBottoms = $$('.img-bottom')
 imgBottoms.forEach(imgBottom => imgBottom.onclick = ()=> window.location.assign('https://www.youtube.com/watch?v=dQw4w9WgXcQ'))
 
-
-
+const paymentDetail = $('.payment-detail')
 const checked1 = ()=>{
   console.log
   $('#payment-1').checked = true
@@ -28,6 +27,16 @@ const checked1 = ()=>{
 const checked2 = ()=>{
   $('#payment-2').checked = true
 }
+
+
+
+
+
+
+
+
+
+
 
 const page1 = $('#page-1')
 const page2 = $('#page-2')
