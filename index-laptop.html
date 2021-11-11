@@ -95,23 +95,23 @@
   <header class="sticky">
     </div>
     <nav class="navbar navbar-dark navbar-expand-md bg-custom">
-      <div class="container-fluid container-md">
+      <div class="container">
+       <div class="row d-md-none">
+        <button class="navbar-toggler col-2"type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand d-flex justify-content-center col" href="index.html" ><img
+        src="Images/7b9eb01979124d6da77cfcddd7e4dfda.png" alt=""></a>
+       </div>
         <div class="row">
-          <div class="col-12 col-lg-2" >
-            <div class="row justify-content-center">
-              <button class="navbar-toggler col-2"type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            <a class="navbar-brand d-flex d-xl-block justify-content-center col-7 col-md-12" href="index.html" ><img
+            <a class="navbar-brand d-none d-md-flex justify-content-center col-12 col-lg-2" href="index.html" ><img
                 src="Images/7b9eb01979124d6da77cfcddd7e4dfda.png" alt=""></a>
-            </div>
-          </div>
           <div class="col col-sm">
             <div class="row justify-content-center justify-content-lg-start">
               <div class="collapse navbar-collapse col-sm-12" id="navbarSupportedContent">
-                <form class="d-flex d-md-none col col-sm-10 col-md-12">
+                <form class="d-flex d-md-none col col-sm-10 col-md-12" style="margin-bottom: 5px;">
                   <input class="form-control col" type="search" placeholder="Nhập sản phẩm" aria-label="Search">
                   <button class="btn btn-danger col-2 col-md-1" type="submit" id="search"><i class="fas fa-search"></i>
                   </button>
@@ -211,10 +211,10 @@
                     </div>
                   </li>
                   <li class="nav-item" id="login"> <a href="#loginFormToggle" data-bs-toggle="modal"
-                      class="nav-link "><i class="fas fa-sign-in-alt"></i> Đăng nhập</a>
+                      class="nav-link "> <i class="fas fa-sign-in-alt"></i> Đăng nhập</a>
                   </li>
                   <li class="nav-item" id="sign-up"><a data-bs-toggle="modal" href="#sign-upFormToggle"
-                      class="nav-link "><i class="fas fa-register"></i><i class="fas fa-user-plus"></i> Đăng
+                      class="nav-link "> <i class="fas fa-register"></i><i class="fas fa-user-plus"></i> Đăng
                       ký</a>
                   </li>
                 </ul>

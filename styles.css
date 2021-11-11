@@ -33,9 +33,10 @@ body{
 }
 
 #search{
-    border-radius: 5px 50px 50px 5px;
+    border-radius: 0px 50px 50px 0px;
 }
 .navbar-toggler{
+
 }
 
 .img-content{    
@@ -243,8 +244,7 @@ border-bottom: 1px ridge lightgray;
         margin-top: 7px;
     }
     .navbar-brand img{
-        width: 90%;
-        object-fit: scale-down;
+        width: 41%;
     }
 }
 
@@ -318,6 +318,7 @@ border-bottom: 1px ridge lightgray;
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
     .navbar-brand img{
         width: 100%;
+        object-fit: contain;
     }
 }	
 
