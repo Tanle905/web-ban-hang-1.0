@@ -143,6 +143,7 @@ button.sort-button:hover{
 .row.cart{
     padding: 15px;
     margin: 10px 0px;
+    margin-top: 0px;
     border-radius: 5px;
     background-color: white;
     box-shadow: 2px 2px 4px lightgray;
@@ -176,6 +177,7 @@ border-bottom: 1px ridge lightgray;
 .row.checkout{
     padding: 15px;
     margin: 10px 0px;
+    margin-top: 0px;
     border-radius: 5px;
     background-color: white;
     box-shadow: 2px 2px 4px lightgray;
