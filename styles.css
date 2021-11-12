@@ -243,9 +243,6 @@ border-bottom: 1px ridge lightgray;
         height: 90%;
         margin-top: 7px;
     }
-    .navbar-brand img{
-        width: 41%;
-    }
 }
 
 .custom-tooltip {
@@ -316,12 +313,8 @@ border-bottom: 1px ridge lightgray;
 	.navbar .nav-item .dropdown-menu{ display: none; }
 	.navbar .nav-item:hover .dropdown-menu{ display: block; }
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
-    .navbar-brand img{
-        width: 100%;
-        object-fit: contain;
-    }
-}	
 
+}
 /* Set the size of the div element that contains the map */
 #map {
     margin-top: 10px;
