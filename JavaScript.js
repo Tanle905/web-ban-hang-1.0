@@ -28,6 +28,21 @@ const checked2 = ()=>{
   $('#payment-2').checked = true
 }
 
+  trashes = $$('.fa-trash').forEach((trash)=>{
+    trash.style.cursor = "pointer"
+    trash.onclick = function(){
+        function remove(trash, callback){
+          trash.parentElement.parentElement.classList.add("fade")
+          setTimeout(()=>{callback(trash,callback)},400)
+    }
+        function remove2(trash,callback){
+            trash.parentElement.parentElement.classList.add("d-none")
+
+          }
+
+        remove(trash,remove2)
+    }
+  })
 
 
 
