@@ -173,7 +173,7 @@ border-bottom: 1px ridge lightgray;
     color: white;
     padding: 5px;
     margin: 5px 0px;
-    margin-top: -15px;
+    margin-top: 15px;
     border-radius: 5px;
 }
 .row.checkout{
