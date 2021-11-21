@@ -211,6 +211,18 @@ border-bottom: 1px ridge lightgray;
     border-top: 1px ridge lightgray;
     margin-top: 10px;
 }
+.completed{
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 4px lightgray;
+}
+.completed-header{
+    background-color: #eb7c6d;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: larger;
+}
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;

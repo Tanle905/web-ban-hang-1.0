@@ -51,26 +51,30 @@ const checked2 = ()=>{
 const request = ( url, params, method ) => {
     // All logic is here.
     let options = {
-      method
+      method:method,
   };
   if ( 'GET' === method ) {
       url += '?' + ( new URLSearchParams( params ) ).toString();
   } else {
+      let myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json")
+      options.headers = myHeaders;
       options.body = JSON.stringify( params );
+      body.mode = 'cors'
   }
-  
-  return fetch( url, options ).then( response => response.json() );
+  return fetch( url, options ).then( response => response.text() );
 };
 
 const get = ( url, params ) => request( url, params, 'GET' );
 const post = ( url, params ) => request( url, params, 'POST' );
 
-get( 'http://localhost:8080/api/v1/student', )
-post('http://localhost:8080/api/v1/student',{"name":"Test","dob":"2042-04-22","email":"test@gmail.com"})
-.then( response => {
-    // Do something with response.
-    console.log(response)
-} );
+get( 'http://localhost:8080/api/v1/student')
+.then(response=>{
+  console.log(response)
+  return response
+})
+.then(post('http://localhost:8080/api/v1/student',{"name":"Test","dob":"2042-04-22","email":"test@gmail.com"}))
+.then(get( 'http://localhost:8080/api/v1/student').then( response => {console.log(response)}))
 
 
 
