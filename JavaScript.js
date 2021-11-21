@@ -8,7 +8,7 @@ const body = $('body');
 const signUp = $('#sign-up');
 const login = $$('#login');
 const merchandises = $$('.card img')
-merchandises.forEach(merchandise => merchandise.onclick = ()=> window.location.assign('https://tanle905.github.io/'))
+merchandises.forEach(merchandise => merchandise.onclick = ()=> window.location.assign('https://tanle905.github.io/laptop-demo.html'))
 
 const tooltipContents = $$('.tooltip-content')
 tooltipContents.forEach(tooltipContent => tooltipContent.onclick = ()=> window.location.assign('https://www.youtube.com/watch?v=dQw4w9WgXcQ'))
@@ -47,6 +47,30 @@ const checked2 = ()=>{
 
 
 
+
+const request = ( url, params, method ) => {
+    // All logic is here.
+    let options = {
+      method
+  };
+  if ( 'GET' === method ) {
+      url += '?' + ( new URLSearchParams( params ) ).toString();
+  } else {
+      options.body = JSON.stringify( params );
+  }
+  
+  return fetch( url, options ).then( response => response.json() );
+};
+
+const get = ( url, params ) => request( url, params, 'GET' );
+const post = ( url, params ) => request( url, params, 'POST' );
+
+get( 'http://localhost:8080/api/v1/student', )
+post('http://localhost:8080/api/v1/student',{"name":"Test","dob":"2042-04-22","email":"test@gmail.com"})
+.then( response => {
+    // Do something with response.
+    console.log(response)
+} );
 
 
 
