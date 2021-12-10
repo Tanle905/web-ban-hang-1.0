@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chao mung den voi website</title>
+  <link rel="icon" href="Images/Daco_2400240.png" type="image/icon type">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <section>
+    <div class="modal" id="sign-upFormToggle" aria-hidden="true" aria-labelledby="sign-upFormToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-md modal-fullscreen-sm-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="sign-upFormToggleLabel">Đăng ký</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="justify-content-center">
+              <div class="">
+                <input type="text" class="form-control" placeholder="Nhập Email của bạn." id="signUpUserAccount">
+              </div>
+              <div class="">
+                <input type="password" class="form-control" placeholder="Nhập mật khẩu của bạn."
+                  id="signUpUserPassword">
+              </div>
+              <div class="">
+                <input type="password" class="form-control " placeholder="Vui lòng nhập lại mật khẩu."
+                  id="signUpUserPasswordConfirm">
+              </div>
+              <div class="row">
+                <button class="btn btn-primary col-4 col-sm-3" type="submit" style="margin-left: 15px;">Đăng ký</button>
+                <div class="col-1 d-none d-sm-block" style="margin-top: 22px; margin-left: 10px;">
+                  <h6>Or</h6>
+                </div>
+                <button class="btn btn-primary col-3 col-sm" type="submit"
+                  style="margin: 15px;background-color: rgb(221, 70, 70);border:0cm;"><i class="fab fa-google"></i>
+                  <span class="d-none d-sm-inline">Google</span></button>
+                <button class="btn btn-primary col-3 col-sm" type="submit" style="margin-right: 15px;"><i
+                    class="fab fa-facebook"></i> <span class="d-none d-sm-inline">Facebook</span></button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <a href="#loginFormToggle" class="text-dark" data-bs-toggle="modal">Đã có tài khoản ?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="loginFormToggle" aria-hidden="true" aria-labelledby="loginFormToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginFormToggleLabel">Đăng nhập</h5>
+            <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="">
+                <input type="text" class="form-control" placeholder="Nhập Email của bạn." id="loginUserAccount">
+              </div>
+              <div class="">
+                <input type="password" class="form-control" placeholder="Nhập mật khẩu của bạn." id="loginUserPassword">
+              </div>
+              <div class="row">
+                <button class="btn btn-primary col-4 col-sm-3" type="submit" style="margin-left: 15px;">Đăng
+                  nhập</button>
+                <div class="col-1 d-none d-sm-inline" style="margin-top: 22px; margin-left: 10px;">
+                  <h6>Or</h6>
+                </div>
+                <button class="btn btn-primary col-3 col-sm" type="submit"
+                  style="margin: 15px;background-color: rgb(221, 70, 70);border:0cm;"><i class="fab fa-google"></i><span
+                    class="d-none d-sm-inline">Google</span></button>
+                <button class="btn btn-primary col-3 col-sm" type="submit" style="margin-right: 15px;"><i
+                    class="fab fa-facebook"></i><span class="d-none d-sm-inline">Facebook</span></button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-around">
+            <a href="#sign-upFormToggle" class="text-dark" data-bs-toggle="modal">Chưa có tài khoản ? Đăng kí ngay!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <header class="sticky">
+    <nav class="navbar navbar-dark navbar-expand-md bg-custom">
+      <div class="container justify-content-center justify-content-lg-start">
+        <div class="row">
+          <div class="col-sm-12 col-lg-2">
+            <a class="navbar-brand d-none d-md-flex justify-content-center" href="index.html"><img
+                src="Images/7b9eb01979124d6da77cfcddd7e4dfda.png" alt=""></a>
+          </div>
+          <div class="col col-sm">
+            <div class="row justify-content-center justify-content-lg-start">
+              <button class="navbar-toggler col-2" style="margin-left: 10px;" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <form class="d-flex d-md-none col" style="padding-top: 5px;">
+                <input class="form-control col" type="search" placeholder="Nhập sản phẩm" aria-label="Search">
+                <button class="btn btn-danger col-2 col-md-1" type="submit" id="search"><i class="fas fa-search"></i>
+                </button>
+              </form>
+              <div class="collapse navbar-collapse col-sm-12" id="navbarSupportedContent">
+                <ul class="navbar-nav col-12 justify-content-center justify-content-lg-start">
+                  <li class="nav-item">
+                    <a class="nav-link  fs-6" aria-current="page" href="index.html"><i
+                        class="fas fa-home d-md-none d-lg-inline"></i> Trang
+                      chủ</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle fs-6" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-desktop d-md-none d-lg-inline"></i> Sản phẩm
+                    </a>
+                    <ul class="dropdown-menu bg-custom" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item text-white" href="index-laptop.html">Laptop</a></li>
+                      <li><a class="dropdown-item text-white" href="index-pc.html">Máy tính để bàn</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item justify-content-end custom-tooltip">
+                    <a class="nav-link fs-6" href="cart.html" id="cart"><i
+                        class="fas fa-shopping-cart d-md-none d-lg-inline "></i> Giỏ hàng</a>
+                    <div class="tooltiptext d-none d-lg-block">
+                      <div class="tooltip-header">
+                        <h6>Giỏ hàng</h6>
+                      </div>
+                      <div class="tooltip-content container-fluid">
+                        <div class="row align-items-end">
+                          <img src="Images/60584_victus_mica_silver_1-510x510.jpg" class="col" alt="">
+                          <div class="col-8">
+                            <div class="row">
+                              <h6 class="col-12">Laptop HP</h6>
+                              <h7 class="col-6">23.999.000</h7>
+                              <h6 class="col">Số lượng</h6>
+                              <span class="itemQuantity col-1">x1</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tooltip-content container-fluid">
+                        <div class="row align-items-end">
+                          <img src="Images/60584_victus_mica_silver_1-510x510.jpg" class="col" alt="">
+                          <div class="col-8">
+                            <div class="row">
+                              <h6 class="col-12">Laptop HP</h6>
+                              <h7 class="col-6">23.999.000</h7>
+                              <h6 class="col">Số lượng</h6>
+                              <span class="itemQuantity col-1">x1</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tooltip-content container-fluid">
+                        <div class="row align-items-end">
+                          <img src="Images/60584_victus_mica_silver_1-510x510.jpg" class="col" alt="">
+                          <div class="col-8">
+                            <div class="row">
+                              <h6 class="col-12">Laptop HP</h6>
+                              <h7 class="col-6">23.999.000</h7>
+                              <h6 class="col">Số lượng</h6>
+                              <span class="itemQuantity col-1">x1</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tooltip-content container-fluid">
+                        <div class="row align-items-end">
+                          <img src="Images/60584_victus_mica_silver_1-510x510.jpg" class="col" alt="">
+                          <div class="col-8">
+                            <div class="row">
+                              <h6 class="col-12">Laptop HP</h6>
+                              <h7 class="col-6">23.999.000</h7>
+                              <h6 class="col">Số lượng</h6>
+                              <span class="itemQuantity col-1">x1</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tooltip-content container-fluid">
+                        <div class="row align-items-end">
+                          <img src="Images/60584_victus_mica_silver_1-510x510.jpg" class="col" alt="">
+                          <div class="col-8">
+                            <div class="row">
+                              <h6 class="col-12">Laptop HP</h6>
+                              <h7 class="col-6">23.999.000</h7>
+                              <h6 class="col">Số lượng</h6>
+                              <span class="itemQuantity col-1">x1</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tooltip-footer d-flex justify-content-end">
+                        <a href="cart.html"><button role="button" class="btn btn-danger">Mua ngay</button></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class=" position-absolute nav-item dropdown me-1" id="login" style="left: 92%;max-width: 10%;">
+                    <a class=" nav-link  dropdown-toggle fs-6 position-relative" href="#" id="navbarDropdown"
+                      role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="Images/avatar.jpg" class="img-fluid rounded-circle w-25 col-1 me-2">Tân Trần
+                    </a>
+                    <ul class="position-absolute dropdown-menu bg-custom end-0 mt-1" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item text-white" href="index-laptop.html">Quản lý tài khoản</a></li>
+                      <li><a class="dropdown-item text-white" href="index-pc.html">Đơn đã mua</a></li>
+                      <li><a class="dropdown-item text-white" href="index-pc.html">Đăng xuất</a></li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </div>
+              <form class="d-none d-md-flex col col-sm-10" style="padding-top: 5px;">
+                <input class="form-control col" type="search" placeholder="Nhập sản phẩm" aria-label="Search">
+                <button class="btn btn-danger col-2 col-md-1" type="submit" id="search"><i class="fas fa-search"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="container-fluid">
+    <div class="row" style="margin: 0px 10px;">
+      <div class="col-sm">
+        <nav>
+          <ol class="breadcrumb fs-6">
+            <li class="breadcrumb-item"><a href="index.html" style="text-decoration: none;">Trang chủ <i
+                  class="fas fa-home "></i></a></li>
+            <li class="breadcrumb-item current"><i class="fas fa-user"></i> Tài khoản</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-lg-3">
+        <div class="row checkout">
+          <div class="checkout-header d-flex justify-content-center">
+            <h3>Tài khoản</h3>
+          </div>
+          <h5 class="fw-bold">Thông tin tài khoản</h5>
+          <ul style="list-style-type: none;" class="ms-4">
+            <li class="fw-bold" style="color: rgb(221, 70, 70);">Chỉnh sửa tài khoản</li>
+            <li >Đổi mật khẩu</li>
+            <li >Đơn đã mua</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-lg-9">
+        <div class="row cart" style="height: 46vh;">
+          <div class="checkout-header">
+            <h3>Chỉnh sửa thông tin</h3>
+          </div>
+          <div class="card-body ">
+            <form action="">
+              <div class="mb-3 row">
+                <label for="" class="form-check-label col-1 ">Họ tên:</label><input class="form-control col-1 ml-2 w-25"
+                  type="text" name="" id="" value="Tan Tran">
+              </div>
+              <div class="mb-3 row">
+                <label for="" class="form-check-label col-1 ">Email:</label><input class="form-control col-1 ml-2 w-25"
+                  type="text" name="" id="" value="tanb1910444**********.com">
+              </div>
+              <div class="mb-3 row">
+                <label for="" class="form-check-label col-1 ">SĐT:</label><input class="form-control col-1 ml-2 w-25"
+                  type="text" name="" id="" value="+852 123* ****">
+              </div>
+              <div class="mb-3 row">
+                <label for="" class="form-check-label col-1">Địa chỉ:</label><textarea name=""
+                  class="form-control col-1 ml-2 w-25 " id="" cols="30"
+                  rows="5">********************,Ninh Kieu, Can Tho, Vietnam</textarea>
+              </div>
+              <div class="offset-1">
+                <button class="btn btn-primary m-1 " type="submit">Lưu</button>
+                <button class="btn btn-danger m-1" type="reset">Xóa</button>
+              </div>
+            </form>
+          </div>
+          <div class="row cart-header mt-5 d-flex align-items-center d-none">
+            <div class="col-3 col-lg-6">
+              <h6>Sản phẩm</h6>
+            </div>
+            <div class="col-2 col-lg-3">
+              <h6>Số lượng</h6>
+            </div>
+            <div class="col-5 col-lg-2">
+              <h6>Tổng giá</h6>
+            </div>
+            <div class="d-block col-1 col-lg-1 d-flex justify-content-end">
+              <h6>Tình trạng</h6>
+            </div>
+          </div>
+          <div class="card-body d-none" style="border: none;">
+            <div class="row cart-body" style="border: none;">
+              <div class="col-3 col-lg-6">
+                <div class="row">
+                  <img src="Images/60584_victus_mica_silver_1-510x510.jpg" alt="" class="col-12 col-md-4">
+                  <h6 class="col">HP Victus 16-e0175AX Taffyta 21C1
+                    R5-5600H | 8GB | 512GB SSD + 32GB 3D Xpoint | RTX 3050</h6>
+                </div>
+              </div>
+              <div class=" d-flex align-content-center col-2 col-lg-3">
+                <p>x4</p>
+              </div>
+              <div class="col-5 col-lg-2">
+                <p>23.990.000</h5>
+              </div>
+              <div class="col-1 col-lg-1 d-flex justify-content-end">Đang xử lý</div>
+            </div>
+
+          </div>
+          <div class="d-flex justify-content-center d-none">
+            <form action="" >
+              <div class="row">
+                <label for="" class="form-check-label col-5 "><p class="text-center">Vui lòng nhập Email: </p></label><input class="form-control col align-self-center" type="text" name="" id="">
+              <button class="btn btn-primary col-2 ms-3"> Gửi</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  </section>
+  <footer class="footer bg-custom text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 col-xl-4 address">
+          <h5>Địa chỉ</h5>
+          <address>
+            Can Tho University, CMT8<br>
+            Ninh Kieu, Can Tho<br>
+            Vietnam<br>
+            <span class="fa fa-phone"></span> Tel.: +852 1234 5678<br>
+            <span class="fa fa-fax"></span> Fax: +852 8765 4321<br>
+            <span class="fa fa-envelope"></span> Email: <a href="mailto:tanb1910444@student.ctu.edu.vn"
+              class="text-light">tanb1910444@student.ctu.edu.vn</a>
+          </address>
+        </div>
+        <div id="map" class="col-md-5 col-xl-5 offset-3">
+
+        </div>
+        <div class="col-12">
+          <div class="text-center">
+            <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                class="fab fa-google-plus fa-2x"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
+                class="fab fa-facebook fa-2x"></i></a>
+            <a href="http://www.linkedin.com/in/" class="btn btn-social-icon btn-linkedin"><i
+                class="fab fa-linkedin fa-2x"></i></a>
+            <a href="http://twitter.com/" class="btn btn-social-icon btn-twitter"><i
+                class="fab fa-twitter fa-2x"></i></a>
+            <a href="http://youtube.com/" class="btn btn-social-icon btn-google"><i
+                class="fab fa-youtube fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <p>© Copyright 2021 Tran Viet Tan B1910444</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="JavaScript.js" await></script>
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1r7CVcpec5138ezrrZcmpuAhsP4PtJ-g&callback=initMap&libraries=&v=weekly&channel=2"
+    async></script>
+</body>
+
+</html>
